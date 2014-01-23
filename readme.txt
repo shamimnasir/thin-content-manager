@@ -4,7 +4,7 @@ Plugin URI: http://pluginspire.com/
 Tags: robots.txt, robots, robot, search, google, meta, meta tags, head, head section, thin content, word count, noindex, nofollow, exclusion file, block pages, disallow pages
 Requires at least: 3.1
 Tested up to: 3.7.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 
 See the body word count to identify pages with thin content, then select pages to insert robots noindex,nofollow tags into.
@@ -41,3 +41,6 @@ This plugin works with with single site installs only.
 == Changelog ==
 = 1.0.0 =
 * Initial release.
+
+= 1.0.1 =
+* Updated word count function to correctly handle shortcodes.

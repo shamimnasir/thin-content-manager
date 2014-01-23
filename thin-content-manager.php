@@ -35,8 +35,11 @@ else
 
 class tcm_util
 {
+
 	static function word_count($string)
 	{
+			$string = strip_shortcodes($string);
+		
 		return str_word_count(strip_tags($string));
 	}
 }
@@ -83,7 +86,6 @@ class tcm_admin_management
 
 		return $links;
 	}
-
 
 	function plugin_menu()
 	{
@@ -149,6 +151,15 @@ class tcm_admin_management
 					</fieldset>
 				</p>
 
+				<p style="margin-bottom:.2em;">
+	    			<fieldset style="border:none;">
+	    				<label for="shortcodes" style="display:block;">
+							<input type="checkbox" id="shortcodes" disabled="disabled" />
+							Include shortcode-generated content in the body word count?
+    					</label>
+    				</fieldset>
+				</p>
+
 				<p class="submit">
 					<input type="button" class="button button-primary" value="Save Changes" disabled="disabled">
 				</p>
@@ -193,8 +204,7 @@ class tcm_management_table extends WP_List_Table
 
     function get_columns()
 	{
-
-        return array(
+		return array(
 			'post_title'    => __('Page/Post Title', TCM_TXTDOMAIN),
         	'post_type'		=> __('Type', TCM_TXTDOMAIN),
 			'post_words'    => __('Body Word Count', TCM_TXTDOMAIN),
