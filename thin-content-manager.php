@@ -5,7 +5,7 @@ Plugin URI: http://pluginspire.com
 Author: msfreed
 Author URI: http://pluginspire.com
 Description: See the body word count to identify pages with thin content, then select pages to disallow in robots.txt and insert robots noindex,nofollow tags into.
-Version: 1.0.0
+Version: 1.0.1
 License: GPLv3
 */
 
@@ -39,7 +39,7 @@ class tcm_util
 	static function word_count($string)
 	{
 			$string = strip_shortcodes($string);
-		
+
 		return str_word_count(strip_tags($string));
 	}
 }
