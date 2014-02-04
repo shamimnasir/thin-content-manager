@@ -3,7 +3,7 @@ Contributors: msfreed
 Plugin URI: http://pluginspire.com/
 Tags: robots.txt, robots, robot, search, google, meta, meta tags, head, head section, thin content, word count, noindex, nofollow, exclusion file, block pages, disallow pages
 Requires at least: 3.1
-Tested up to: 3.7.1
+Tested up to: 3.8.1
 Stable tag: trunk
 Version: 1.0.1
 License: GPLv3
